@@ -1,0 +1,23 @@
+ASk
+
+Thermo1 
+Skill ID : amzn1.ask.skill.557592dd-7bdd-4c6d-b42e-33d298a00255
+
+
+Lambda
+Thermostat_lambda
+ARN : arn:aws:lambda:us-east-1:795756342321:function:Thermostat_lambda
+
+
+Security Profile
+askProfile1
+ID : 	amzn1.application.5fc4dc2be20e413aabc2a125cf1ca7e3
+Client ID : amzn1.application-oa2-client.2b219f895d0f4d48a95f56533381f3f7
+Client Secret : ee80f2f4438c6269f8e339d6c2666e4d26b422e7e6557392e975d6f5990f2f2b
+
+Allowed Origins : https://www.amazon.com
+
+Allowed Return URLs : 
+https://pitangui.amazon.com/api/skill/link/M1M7E2YOFUZRJ4
+https://layla.amazon.com/api/skill/link/M1M7E2YOFUZRJ4
+https://alexa.amazon.co.jp/api/skill/link/M1M7E2YOFUZRJ4

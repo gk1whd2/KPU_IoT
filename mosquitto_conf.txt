@@ -1,0 +1,19 @@
+pid_file /var/run/mosquitto.pid
+persistence true
+persistence_location /var/lib/mosquitto/
+log_dest file /mosquitto/log/mosquitto.log
+connection bridge-to-watsoniot
+bridge_insecure false
+bridge_cafile /etc/mosquitto/ca_certificates/watson_iot.crt
+address z5mti2.messaging.internetofthings.ibmcloud.com:8883
+cleansession false
+try_private false
+bridge_attempt_unsubscribe false
+notifications true
+notification_topic iot-2/type/MQTT-Bridge/id/Edge1/evt/status/fmt/raw
+remote_username use-token-auth
+remote_clientid g:z5mti2:MQTT-Bridge:Edge1
+remote_password L5yTT@ZV-WCnwFQh9d
+topic iot-2/type/+/id/+/cmd/+/fmt/+ in iot-2/type/+/id/+/cmd/+/fmt/+
+topic iot-2/type/+/id/+/evt/+/fmt/+ out iot-2/type/+/id/+/evt/+/fmt/+
+connection_messages true
